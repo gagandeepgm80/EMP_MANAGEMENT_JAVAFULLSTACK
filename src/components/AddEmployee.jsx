@@ -27,6 +27,7 @@ const saveEmployee = (e) => {
     employeeService.create(employee)
     .then(response =>{
       console.log('Data Added Successfully',response.data);
+      navigate('/')
     })
     .catch(error=>{
       console.log("Something went wrong",error)

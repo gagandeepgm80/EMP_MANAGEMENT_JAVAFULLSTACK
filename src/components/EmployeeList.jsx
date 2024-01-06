@@ -70,7 +70,7 @@ else{
             <td>{employee.department}</td>
             <td>
             <Link className='btn btn-info' to={`/employees/edit/${employee.id}`}>Update</Link>
-
+                       
               <button className = 'btn btn-danger' onClick={(e)=>{handleDelete(employee.id, employee.name)}} >Delete</button>
             </td>
               
